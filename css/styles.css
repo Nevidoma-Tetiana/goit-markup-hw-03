@@ -17,6 +17,7 @@ html {
 }
 
 body {
+  margin: 0;
   background-color: var(--primery-white-color);
   color: var(--primery-text-color);
   font-family: Roboto, sans-serif;
@@ -42,6 +43,7 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .list,
@@ -72,10 +74,14 @@ img {
   text-align: center;
 }
 
+/* Header */
+
+.heading {
+  margin-top: 0;
+}
+
 .page-header {
-  background-color: var(--primery-white-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  border-bottom: 1px solid red;
   display: flex;
 }
 
@@ -94,8 +100,16 @@ img {
   align-items: center;
 }
 
+.header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /* Link */
+
 a {
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
 }
 
@@ -120,19 +134,12 @@ a {
   align-items: center;
   margin-right: auto;
 }
-.site-nav-item {
-  /* display: flex; */
-}
-
-.site-nav-item:not(:last-child) {
-  margin-right: 50px;
-}
 
 .site-nav-list .site-nav-item + .site-nav-item {
   margin-left: 50px;
 }
 
-.site-nav-list .link {
+.site-nav-list .header-link {
   align-items: center;
   display: flex;
   color: var(--primery-text-color);
@@ -226,7 +233,18 @@ a {
 
 /* Section */
 
+.servises-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.14;
+}
+
 .section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background: #f5f4fa;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.14;
@@ -234,8 +252,10 @@ a {
 .section-title {
   color: var(--primery-text-color);
 }
+
 .heading {
   margin-bottom: 50px;
+  margin-top: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -282,7 +302,6 @@ a {
   background-color: var(--background-team-list);
   width: 270px;
   border-radius: 0px 0px 4px 4px;
-  padding-top: 30px;
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -294,8 +313,13 @@ a {
 .team-image {
   margin-bottom: 30px;
 }
+.team-list-person {
+  padding: 30px 30px 30px 30px;
+}
+
 .team-person {
   margin-bottom: 10px;
+  margin-top: 0;
   color: var(--primery-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -303,6 +327,7 @@ a {
   text-align: center;
 }
 .profesion {
+  padding: 0 0 0 0;
   color: var(--paragraph-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -317,6 +342,7 @@ a {
   min-width: 216px;
   height: 50px;
   margin: 0 auto;
+  margin-bottom: 0;
   margin-top: 30px;
   background-color: var(--accent-color);
   color: var(--primery-white-color);
@@ -384,8 +410,6 @@ a {
 }
 .btn-second {
   padding: 6px 22px;
-  min-width: 125px;
-  height: 38px;
 
   background-color: #f5f4fa;
   color: var(--primery-text-color);
@@ -393,6 +417,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
@@ -418,6 +443,7 @@ a {
 }
 .projects {
   margin-bottom: 4px;
+  margin-top: 0;
   color: var(--primery-text-color);
   font-size: 18px;
   line-height: 2;
@@ -449,10 +475,9 @@ a {
   border-top: 0;
 }
 .projects-type {
+  margin: 0;
   color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-
-
