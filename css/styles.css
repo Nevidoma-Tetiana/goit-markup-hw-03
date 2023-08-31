@@ -67,6 +67,7 @@ a {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   border: none;
+  cursor: pointer;
   display: block;
   height: 50px;
   font-family: inherit;
